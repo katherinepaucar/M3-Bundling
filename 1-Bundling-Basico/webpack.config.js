@@ -33,7 +33,12 @@ export default {
             test: /\.png|jpg|jpeg$/,
             type:"asset/resource"
             
-        }
+        },
+        {
+            test: /\.html$/,
+            loader: "html-loader", // imágenes en html
+          },
+
       ],
     },
     plugins: [
