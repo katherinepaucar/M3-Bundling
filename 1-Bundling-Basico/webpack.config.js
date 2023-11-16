@@ -28,6 +28,11 @@ export default {
             test: /\.css$/,
             exclude: /node_modules/, //Incluir en caso de instalar boostrap
             use: [MiniCssExtractPlugin.loader, "css-loader"],
+        },
+        {
+            test: /\.png|jpg|jpeg$/,
+            type:"asset/resource"
+            
         }
       ],
     },
