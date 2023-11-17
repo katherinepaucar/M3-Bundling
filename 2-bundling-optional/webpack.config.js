@@ -25,7 +25,17 @@ export default {
         {
             test: /\.scss$/,
             exclude: /node_modules/,
-            use: ["style-loader", "css-loader", "sass-loader"],
+            use: [MiniCssExtractPlugin.loader, 
+                {
+                    loader:"css-loader",
+                    options: {
+                        modules: {
+                            localIdentName:  "[path][name]__[local]--[hash:base64:5]",
+                        }
+                    }
+
+                }, 
+                "sass-loader"], //MiniCssExtractPlugin para generar css fichero
         },
         {
             test: /\.css$/,
