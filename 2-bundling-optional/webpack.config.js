@@ -41,6 +41,12 @@ export default {
 
       ],
     },
+    devtool: "eval-source-map",
+    devServer:{
+        devMiddleware: {
+            stats: "errors-only"
+        }
+    },
     plugins: [
         new HtmlWebpackPlugin({
           template: "./index.html",
