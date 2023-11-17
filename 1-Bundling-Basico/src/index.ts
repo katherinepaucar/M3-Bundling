@@ -4,6 +4,11 @@ import img2  from "./images/image2.jpg";
 const img = document.createElement('img');
 img.src= img1;
 document.getElementById('containerImg').appendChild(img);
-let timer = setTimeout(() => {
-    img.src = img2;
-}, 4000);
+let timer = setInterval(() => {
+    if(img.src===img1){
+        img.src = img2;
+    }else{
+        img.src = img1;
+    }
+
+}, 5000);
