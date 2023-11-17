@@ -1,4 +1,25 @@
-$color:blue;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+$color-title:#00008e;
+$color-background: #d6c1f7;
+body{
+   background-color: $color-background;
+   height: 100vh !important;
+}
+h1{
+   text-align: center;
+   color:$color-title;
+
+}
+
 .background{
-   background-color: $color;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   height: 80%;
+   justify-content: center;
+   align-items: center;
 }
