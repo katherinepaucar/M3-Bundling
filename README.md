@@ -30,6 +30,12 @@
   <img src="https://github.com/katherinepaucar/images/blob/main/lc-images/ejemplo-parcel.png" width="500px"  />
 
 </div>
+<div>
+  <h3>4-Bonus-point- Vite</h3>
+  <p>Montar una semilla de proyecto con vite. En mi proyecto semilla se da soporte a sass y typescript.</p>
+  
+</div>
+
 
 
 
