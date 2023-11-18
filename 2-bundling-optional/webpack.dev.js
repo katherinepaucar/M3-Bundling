@@ -1,5 +1,6 @@
 
 import {merge} from 'webpack-merge';
+import Dotenv from 'dotenv-webpack'
 import common from './webpack.common.js';
 
 export default merge(common, {
@@ -30,6 +31,11 @@ export default merge(common, {
         devMiddleware: {
             stats: "errors-only"
         }
-    }
+    },
+    plugins:[
+        new Dotenv({
+            path: "./environment/dev.env"
+        })
+    ]
   });
   
