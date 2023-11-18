@@ -31,6 +31,19 @@ export default merge(common, {
   
         ],
       },
+      optimization:{
+           runtimeChunk: 'single',
+           splitChunks: {
+             cacheGroups: {
+               vendor: {
+                 chunks: 'all',
+                 name: 'vendor',
+                 test: /[\\/]node_modules[\\/]/, // Separar las liberías de terceros
+                 enforce: true,
+               },
+             },
+           },
+      },
       plugins: [
         new MiniCssExtractPlugin({
             filename: "css/[name].[chunkhash].css",
