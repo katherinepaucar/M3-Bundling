@@ -6,10 +6,10 @@ const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 export default {
     context: path.resolve(__dirname, "src"),
     resolve:{
-        extensions: [".js", ".jsx"]
+        extensions: [".js", ".ts",".tsx"]
     },
     entry: {
-        app: "./index.jsx"
+        app: "./index.tsx"
     },
     output:{
         filename: "[name].[chunkhash].js",
@@ -18,7 +18,7 @@ export default {
     module: {
       rules: [ // LOADER 
         {
-            test: /\.jsx?$/,
+            test: /\.tsx?$/,
             exclude: /node_modules/,
             loader: "babel-loader",
         },
@@ -30,6 +30,7 @@ export default {
                     loader:"css-loader",
                     options: {
                         modules: {
+                            exportLocalsConvention:"camelCase",
                             localIdentName:  "[path][name]__[local]--[hash:base64:5]",
                         }
                     }

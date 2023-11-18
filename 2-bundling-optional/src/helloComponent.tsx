@@ -1,11 +1,11 @@
 import React from "react";
-import "./helloComponent.scss"
+import classes from "./helloComponent.scss"
 
 export const HelloComponent = () => {
 
   return (
     <div>
-      <h1 class="color-text">Hello Component</h1>
+      <h1 className={classes.colorText}>Hello Component</h1>
     </div>
   );
 };
