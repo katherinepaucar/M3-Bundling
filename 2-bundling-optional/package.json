@@ -10,7 +10,7 @@
     "type-check:watch": "npm run type-check -- --watch",
     "start:dev": "webpack serve --config webpack.dev.js",
     "build:dev": "webpack --config webpack.dev.js",
-    "build:prod": "run-p -l type-check:watch build:prodconf",
+    "build:prod": "run-p -l type-check build:prodconf",
     "build:prodconf": "webpack --config webpack.prod.js",
     "build:perf": "webpack --config webpack.performance.js"
   },
