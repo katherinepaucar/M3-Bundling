@@ -6,3 +6,4 @@ package-lock.json
 colors.css.map
 styles.css.map
 1-Bundling-Basico/notas.mock.ts
+2-bundling-optional/webpack.config.mock.ts
