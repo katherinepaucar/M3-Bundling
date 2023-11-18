@@ -1,0 +1,25 @@
+$color-title: blue;
+$color-border:#8eb19d;
+$color-background-card: white;
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        margin-top: 20px;
+        width: 300px;
+        padding: 12px;
+        border: 1px dotted $color-border;
+        border-radius: 10px;
+        background-color: $color-background-card;
+        .color-text{
+            color:$color-title;
+           }
+        ul{
+         list-style: none;
+        }
+        
+    }
+
+}

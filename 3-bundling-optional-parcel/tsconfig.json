@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "declaration": false,
+      "noImplicitAny": false,
+      "sourceMap": true,
+      "jsx": "react-jsx",
+      "noLib": false,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "baseUrl": "./src/"
+    }
+  }
+  
