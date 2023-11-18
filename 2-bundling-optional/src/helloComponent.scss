@@ -6,8 +6,8 @@ $color-background-card: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     .card{
+        margin-top: 20px;
         width: 300px;
         padding: 12px;
         border: 1px dotted $color-border;
