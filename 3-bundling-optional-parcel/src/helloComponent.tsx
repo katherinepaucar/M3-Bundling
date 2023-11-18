@@ -22,7 +22,7 @@ export const HelloComponent = () => {
         <>
           <h1>Ejemplo Pokemon API - Bundling Parcel</h1>
           <div className={classes.container}>
-            <div className={classes['card']}>
+            <div className={classes.card}>
 
               <h2 className={classes['color-text']}>{pokemon?.name}</h2>
               <img src={pokemon?.sprites?.front_default} />

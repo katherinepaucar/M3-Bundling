@@ -22,8 +22,10 @@
     <li>Tener una forma de medir cuanto ocupa cada librería y nuestro código en el bundle.​</li>
     <li>Montar lo mismo con parcel (v2) (cómo se mostró en clase, no usar variables de entorno).​</li>
   </ul>
-  <p>Ejemplo de cómo se ve la página:</p>
+  <p>Ejemplo de cómo se ve la página (con Webpack):</p>
   <img src="https://github.com/katherinepaucar/images/blob/main/lc-images/ejemploPokemonAPI.png" width="500px"  />
+  <p>Mismo ejemplo (con Parcel)</p>
+  <img src="https://github.com/katherinepaucar/images/blob/main/lc-images/ejemplo-parcel.png" width="500px"  />
 
 </div>
 
