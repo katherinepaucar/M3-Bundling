@@ -5,7 +5,8 @@ import "./styles.scss";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-  <div>
+  <>
+  <h1>2 Bundling Opcional Webpack</h1>
     <HelloComponent />
-  </div>
+  </>
 );
