@@ -31,14 +31,21 @@ export default merge(common, {
   
         ],
       },
-      optimization:{
+      optimization:{ // Separar las liberías de terceros
            runtimeChunk: 'single',
            splitChunks: {
              cacheGroups: {
                vendor: {
                  chunks: 'all',
-                 name: 'vendor',
-                 test: /[\\/]node_modules[\\/]/, // Separar las liberías de terceros
+                 name: (module) => {
+                    const packageName = module.context.match(
+                            /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+                    )?.[1];
+                    return packageName
+                                    ? `vendor/${packageName.replace("@", "")}`
+                                    : null;
+                },
+                 test: /[\\/]node_modules[\\/]/,
                  enforce: true,
                },
              },
