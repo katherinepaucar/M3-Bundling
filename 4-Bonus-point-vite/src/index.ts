@@ -1,4 +1,4 @@
 import './styles.scss'
-const user = "John Doe";
+const message: string = "Test proyecto semilla";
 
-console.log(`Hello ${user}!`);
+console.log('message',message);
