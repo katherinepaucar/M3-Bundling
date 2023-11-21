@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "vite",
-    "type-check": "tsc --noEmit",
-    "prebuild": "npm run type-check",
+    "prebuild": "tsc",
     "build": "vite build",
     "preview": "vite preview"
   },
